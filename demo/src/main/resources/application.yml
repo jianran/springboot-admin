@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: admin-console-demo
+admin:
+  console:
+    session-timeout: 30m
+    arthas:
+      enabled: false
+    beans:
+      writable:
+        - featureFlags.checkoutEnabled
+    jobs:
+      triggerable:
+        - demoJobs.refreshCache

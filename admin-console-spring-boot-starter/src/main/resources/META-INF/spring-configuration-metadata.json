@@ -1,0 +1,11 @@
+{"properties":[
+  {"name":"admin.console.username","type":"java.lang.String","defaultValue":"admin"},
+  {"name":"admin.console.password-hash","type":"java.lang.String","description":"BCrypt password hash. Required unless a custom AdminCredentialVerifier bean is supplied."},
+  {"name":"admin.console.session-timeout","type":"java.time.Duration","defaultValue":"30m"},
+  {"name":"admin.console.max-login-attempts","type":"java.lang.Integer","defaultValue":5},
+  {"name":"admin.console.login-lockout","type":"java.time.Duration","defaultValue":"15m"},
+  {"name":"admin.console.arthas.enabled","type":"java.lang.Boolean","defaultValue":false},
+  {"name":"admin.console.arthas.endpoint","type":"java.net.URI","defaultValue":"http://127.0.0.1:8563/api"},
+  {"name":"admin.console.beans.writable","type":"java.util.Set<java.lang.String>"},
+  {"name":"admin.console.jobs.triggerable","type":"java.util.Set<java.lang.String>"}
+]}
