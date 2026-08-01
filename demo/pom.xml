@@ -4,6 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <parent><groupId>io.github.adminconsole</groupId><artifactId>admin-console-parent</artifactId><version>0.1.0-SNAPSHOT</version></parent>
   <artifactId>admin-console-demo</artifactId>
+  <properties><maven.deploy.skip>true</maven.deploy.skip></properties>
   <dependencies>
     <dependency><groupId>io.github.adminconsole</groupId><artifactId>admin-console-spring-boot-starter</artifactId><version>${project.version}</version></dependency>
     <dependency><groupId>org.springframework.boot</groupId><artifactId>spring-boot-starter</artifactId></dependency>

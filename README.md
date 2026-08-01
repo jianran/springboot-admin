@@ -103,6 +103,17 @@ mvn -pl demo -Dexec.classpathScope=test \
 mvn -pl demo verify -Pe2e
 ```
 
+## Publish to Maven Central
+
+The `central-release` profile attaches source and Javadoc JARs, signs every artifact, excludes the demo, and publishes through the Central Portal. Before releasing, verify the `io.github.adminconsole` namespace in Central, create a Central user token under server id `central` in your local Maven `settings.xml`, and configure a local GPG secret key. Never commit those credentials.
+
+Set a non-SNAPSHOT version and publish:
+
+```bash
+mvn versions:set -DnewVersion=0.1.0 -DgenerateBackupPoms=false
+mvn clean deploy -Pcentral-release
+```
+
 ## Use application authentication
 
 The built-in verifier expects a BCrypt hash. To connect another identity service, expose one bean:
