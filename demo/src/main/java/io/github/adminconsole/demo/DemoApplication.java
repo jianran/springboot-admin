@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
-@EnableAdminConsole(enableArthas = true)
+@EnableAdminConsole(enableArthas = true, profiles = "default")
 @SpringBootApplication
 public class DemoApplication {
     public static void main(String[] args) { SpringApplication.run(DemoApplication.class, args); }

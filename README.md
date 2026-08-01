@@ -41,6 +41,14 @@ public class MyApplication { }
 
 The endpoint, timeout, and command allowlist still come from `admin.console.arthas.*` configuration.
 
+Restrict the console to selected Spring profiles:
+
+```java
+@EnableAdminConsole(enableArthas = true, profiles = {"dev", "staging"})
+```
+
+Profile expressions are supported, so `profiles = "!prod"` enables the console everywhere except production. Leaving `profiles` empty preserves the original behavior and enables the console in every profile.
+
 Configure the privileged capabilities:
 
 ```yaml
