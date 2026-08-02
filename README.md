@@ -17,7 +17,7 @@ Then add the library to the host application:
 
 ```xml
 <dependency>
-  <groupId>io.github.adminconsole</groupId>
+  <groupId>io.github.jianran</groupId>
   <artifactId>admin-console-spring-boot-starter</artifactId>
   <version>0.1.0-SNAPSHOT</version>
 </dependency>
@@ -105,7 +105,7 @@ mvn -pl demo verify -Pe2e
 
 ## Publish to Maven Central
 
-The `central-release` profile attaches source and Javadoc JARs, signs every artifact, excludes the demo, and publishes through the Central Portal. Before releasing, verify the `io.github.adminconsole` namespace in Central, create a Central user token under server id `central` in your local Maven `settings.xml`, and configure a local GPG secret key. Never commit those credentials.
+The `central-release` profile attaches source and Javadoc JARs, signs every artifact, excludes the demo, and publishes through the Central Portal. Before releasing, verify the `io.github.jianran` namespace in Central, create a Central user token under server id `central` in your local Maven `settings.xml`, and configure a local GPG secret key. Never commit those credentials.
 
 Set a non-SNAPSHOT version and publish:
 
