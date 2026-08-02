@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.jianran</groupId>
   <artifactId>admin-console-parent</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
   <packaging>pom</packaging>
   <name>Embedded Spring Boot Admin Console</name>
   <description>Annotation-enabled embedded administration console for Spring Boot applications.</description>

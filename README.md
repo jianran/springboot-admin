@@ -10,8 +10,8 @@ mvn install
 
 The build produces:
 
-- `admin-console-spring-boot-starter/target/admin-console-spring-boot-starter-0.1.0-SNAPSHOT.jar`
-- `demo/target/admin-console-demo-0.1.0-SNAPSHOT.jar`
+- `admin-console-spring-boot-starter/target/admin-console-spring-boot-starter-0.1.0.jar`
+- `demo/target/admin-console-demo-0.1.0.jar`
 
 Then add the library to the host application:
 
@@ -19,7 +19,7 @@ Then add the library to the host application:
 <dependency>
   <groupId>io.github.jianran</groupId>
   <artifactId>admin-console-spring-boot-starter</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
 </dependency>
 ```
 
@@ -86,7 +86,7 @@ Open `http://localhost:8080/admin-console/index.html`. Arthas must already be at
 ## Run the demo
 
 ```bash
-java -jar demo/target/admin-console-demo-0.1.0-SNAPSHOT.jar
+java -jar demo/target/admin-console-demo-0.1.0.jar
 ```
 
 Open `http://localhost:8080/admin-console/index.html` and log in with the demo-only credentials `admin` / `admin123`.
